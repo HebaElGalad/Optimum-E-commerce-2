@@ -1,13 +1,13 @@
 // Deliverable #2 --> MAIN PAGE
 // Define Main object to create products
 var MakeProduct = function (id, name, category, picture_url, picture_alt, price, my_classes) {
-	this.id				= id,
-	this.name			= name,
-	this.category		= category,
-	this.picture_url	= picture_url,
-	this.picture_alt	= picture_alt,
-	this.price			= price + ".00 EGP",
-	this.my_classes		= my_classes
+	this.id				= id;
+	this.name			= name;
+	this.category		= category;
+	this.picture_url	= picture_url;
+	this.picture_alt	= picture_alt;
+	this.price			= price + ".00 EGP";
+	this.my_classes		= my_classes;
 };
 
 var book1 = new MakeProduct ("book_1","Eloquent JS", "Computer & Technology", "images/card-books-1.png", "A bird", 120, "book product");

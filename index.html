@@ -7,10 +7,11 @@
 	<title>Optimum | Home</title>
 
 	<!-- BOOTSTRAP STYLESHEET -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	
 
 	<!-- FONTAWESOME STYLESHEET -->
-	<link href="styles/fontawesome-all.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/fontawesome-all.css">
 
 	<!-- COUSTUM STYLESHEET -->
 	<link rel="stylesheet" href="styles/style.css">
@@ -35,66 +36,27 @@
 		</header>
 	</div>	<!-- HEADER END -->
 
-	<div class="container">
-		<div class="row">
-			<nav class="navbar navbar-expand-md navbar-light px-0 py-3 d-flex flex-row justify-content-between">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				 </button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Books</a>
-							<div class="dropdown-menu">
-								<a href="#" class="dropdown-item">Computers &amp; Technology</a>
-								<a href="#" class="dropdown-item">Crafts,Hobbies &amp; Home</a>
-								<a href="#" class="dropdown-item">Educaton &amp; Teaching</a>
-								<a href="#" class="dropdown-item">Science Fiction &amp; Fantasy</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Albums</a>
-							<div class="dropdown-menu">
-								<a href="#" class="dropdown-item">Classical</a>
-								<a href="#" class="dropdown-item">Jazz</a>
-								<a href="#" class="dropdown-item">Pop</a>
-								<a href="#" class="dropdown-item">Rock</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Movies</a>
-							<div class="dropdown-menu">
-								<a href="#" class="dropdown-item">Action</a>
-								<a href="#" class="dropdown-item">Biography</a>
-								<a href="#" class="dropdown-item">Drama</a>
-								<a href="#" class="dropdown-item">Romance</a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact Us</a>
-						</li>
-					</ul>
+	<div class="container-fluid bg-white margin-header">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col">
+						<nav class="navbar justify-content-center">
+							<select id="user-select" class="custom-select color-theme border rounded-0 border-primary">
+								<option value="categ" selected="true">All Categories</option>
+							</select>
+							<form id="search-bar" class="form-inline">
+								<input id="search-input" class="form-control border rounded-0 " type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-dark btn-outline-secondary btn-sm my-2 my-sm-0 border-0 rounded-0" type="submit" onclick="searchFunction();">
+									<a href="">
+										<img src="images/search-icon-white.png" width="30px">
+									</a>
+								</button>
+							</form>
+						</nav>
+					</div>
 				</div>
-				<!-- <div class="col-xs-12 col-lg-6"> -->
-					<form action="" class="form-inline ml-md-5">
-						<select name="" class="dropdown-toggle btn rounded-0" aria-labelledby="dropdownMenuButton">
-							<option value="all-products">All</option>
-							<option value="books">Books</option>
-							<option value="albums">Albums</option>
-							<option value="movies">Movies</option>
-						</select>
-						<label for="search" class="sr-only">Search</label>
-						<input class="form-control rounded-0 w-50" type="search" id="search" placeholder="search" aria-label="Search">
-
-						<button class="btn rounded-0" type="submit"><i class="fas fa-search text-secondary"></i></button>
-					</form>
-				<!-- </div> -->
-			</nav>
-		</div>
-	</div>	<!-- NAVBAR END -->
+			</div>
+	</div> <!-- NAVBAR END -->
 
 	<main class="container">
 		<div class="row my-md-4 carousel-modified">
@@ -406,16 +368,9 @@
 		</footer>	<!-- FOOTER END -->
 	</div>
 	
-	<!-- JQUERY LIBARARY -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-	<!-- Popper.js OR AJAX LIBARARY -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-	<!-- BOOTSTRAP JAVASCRIPT PLUGINS -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<!-- COUSTUM JAVASCRIPT -->
-	<script src="script/main.js"></script>
+	<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="script/popper.min.js"></script>
+	<script type="text/javascript" src="script/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script/main.js"></script>
 </body>
 </html>
