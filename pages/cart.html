@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Optimum | Cart</title>
+
+	<!-- BOOTSTRAP STYLESHEET -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- FONTAWESOME STYLESHEET -->
+	<link href="../styles/fontawesome-all.css" rel="stylesheet">
+
+	<!-- COUSTUM STYLESHEET -->
+	<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+	<div class="container-fluid bg-dark-modified">
+		<header class="container">
+			<nav class="navbar navbar-expand-sm justify-content-between p-0">
+				<h1 class="navbar-brand mx-0">
+					<a class="text-danger-modified h1 mb-4" href="../index.html">Optimum</a>
+				</h1>
+				<ul class="navbar-nav">
+					<li class="nav-item mr-5">
+						<a class="nav-link text-white p-0" href="#"><i class="fas fa-user"></i> Username</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white p-0" href="cart.html">EGP 0.00 (0 items) <i class="fas fa-cart-plus"></i></a>
+						<button type="button" class="btn btn-dark-modified  font-weight-light ml-md-4 mb-0 px-sm-3">Empty Cart</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>	<!-- HEADER END -->
+
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-md navbar-light px-0 py-3 clearfix">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				 </button>
+				<div class="collapse navbar-collapse float-left" id="navbarNav">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Books</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Computers &amp; Technology</a>
+								<a href="#" class="dropdown-item">Crafts,Hobbies &amp; Home</a>
+								<a href="#" class="dropdown-item">Educaton &amp; Teaching</a>
+								<a href="#" class="dropdown-item">Science Fiction &amp; Fantasy</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Albums</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Classical</a>
+								<a href="#" class="dropdown-item">Jazz</a>
+								<a href="#" class="dropdown-item">Pop</a>
+								<a href="#" class="dropdown-item">Rock</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Movies</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Action</a>
+								<a href="#" class="dropdown-item">Biography</a>
+								<a href="#" class="dropdown-item">Drama</a>
+								<a href="#" class="dropdown-item">Romance</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <div class="col-xs-12 col-lg-6"> -->
+					<form action="" class="form-inline float-right ml-md-5">
+						<select name="" class="dropdown-toggle btn rounded-0" aria-labelledby="dropdownMenuButton">
+							<option value="all-products">All</option>
+							<option value="books">Books</option>
+							<option value="albums">Albums</option>
+							<option value="movies">Movies</option>
+						</select>
+						<label for="search" class="sr-only">Search</label>
+						<input class="form-control rounded-0 w-50" type="search" id="search" placeholder="search" aria-label="Search">
+
+						<button class="btn rounded-0" type="submit"><i class="fas fa-search text-secondary"></i></button>
+					</form>
+				<!-- </div> -->
+			</nav>
+		</div>
+	</div>	<!-- NAVBAR END -->
+
+
+	<main class="container">
+		<div class="row mb-3">
+			<div class="col-sm-6">
+				<h1 class="h2">Shopping Cart (2)</h1>
+			</div>
+		</div>
+		<table class="table text-center">
+			<thead class="h5">
+				<th></th>
+				<th scope="col">Item</th>
+				<th scope="col">Quantity</th>
+				<th scope="col">Unit Price</th>
+				<th scope="col">Subtotal</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<img class="img-thumbnail item-checkout-img" src="../images/card-books-2.jpg">
+					</td>
+					<td class="h3">
+						Davinci Code
+						<div>
+							<button href="#" class="btn btn-sm btn-outline-success">Save for later</button>
+							<!-- <span class="h6"> | </span> -->
+							<button href="#" class="btn btn-sm btn-outline-danger">Delete</button>
+						</div>	
+					</td>
+					<td>
+						<form action="" class="form-inline mb-3">
+							<div class="form-group">
+								<button class="btn"><i class="fas fa-minus"></i></button>
+								<input type="number" name="" value="" placeholder="1" class="form-control w-25 text-center">
+								<button class="btn"><i class="fas fa-plus"></i></button>
+							</div>
+						</form>
+					</td>
+					<td class="lead">175.00 EGP</td>
+					<td class="lead">175.00 EGP</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="img-thumbnail item-checkout-img" src="../images/card-books-3.jpg">
+					</td>
+					<td class="h3">
+						Harry Potter
+						<div>
+							<button href="#" class="btn btn-sm btn-outline-success">Save for later</button>
+							<!-- <span class="h6"> | </span> -->
+							<button href="#" class="btn btn-sm btn-outline-danger">Delete</button>
+						</div>
+					</td>
+					<td>
+						<form action="" class="form-inline">
+							<div class="form-group">
+								<button class="btn"><i class="fas fa-minus"></i></button>
+								<input type="number" name="" value="" placeholder="1" class="form-control w-25 text-center">
+								<button class="btn"><i class="fas fa-plus"></i></button>
+							</div>
+						</form>
+					</td>
+					<td class="lead">200.00 EGP</td>
+					<td class="lead">200.00 EGP</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<form action="" class="form-inline">
+							<input type="text" name="" value="" placeholder="Enter Coupon Code" class="form-control border-light w-25 mr-3">
+							<button class="btn btn-danger-modified mr-5">Apply</button>
+							<button class="btn btn-danger-modified">Update Cart</button>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row mb-5">
+			<div class="col-sm-6 offset-sm-6 text-right">
+				<p class="h4">Subtotal: 
+					<span class="font-weight-light">375.00 EGP</span>
+				</p>
+				<p class="h4">Total: 
+					<span class="font-weight-light">375.00 EGP</span>
+				</p>
+				<button class="btn btn-danger-modified">Proceed To Checkout</button>
+			</div>
+		</div>
+	</main>
+
+	<div class="container-fluid bg-dark-modified">
+		<footer class="container py-5">
+			<div class="row text-white">
+				<div class="col-sm-6 col-md-3">
+					<h1 class="py-0 mb-3">
+						<a class="text-danger-modified h1" href="../index.html">Optimum</a>
+					</h1>
+					<p class="font-weight-light mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<ul class="nav font-weight-light">
+						<li class="nav-item"><a href="#" class="nav-link text-white px-2"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white px-2"><i class="fab fa-twitter"></i></a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white px-2"><i class="fab fa-google-plus-g"></i></a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white px-2"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<nav class="col-sm-6 col-md-2">
+					<h1 class="h5 my-3">My Account</h1>
+					<ul class="nav flex-column font-weight-light">
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">My Account</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">My Wishlist</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">Checkout</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">Login</a></li>
+					</ul>
+				</nav>
+				<nav class="col-sm-6 col-md-2">
+					<h1 class="h5 my-3">Let Us Help You</h1>
+					<ul class="nav flex-column font-weight-light">
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">Track Orders</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">Returns</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">Shippng Guide</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">FAQs</a></li>
+					</ul>
+				</nav>
+				<nav class="col-sm-6 col-md-2">
+					<h1 class="h5 my-3">Links</h1>
+					<ul class="nav flex-column font-weight-light">
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">Search</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">About Us</a></li>
+						<li class="nav-item"><a href="#" class="nav-link text-white p-0 ">Contact Us</a></li>
+					</ul>
+				</nav>
+				<div class="col-sm-6 col-md-3">
+					<h1 class="h5 my-3">Newsletter</h1>
+					<form action="" class="form-inline">
+						<label for="email" class="sr-only">Email</label>
+						<input type="email" id="email" name="email" placeholder="Your Email address" class="form-control rounded-0 border-0" />
+						
+						<button type="button" class="btn btn-danger-modified rounded-0 mt-2">Sign Up</button>
+					</form>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-8">
+					<p class="font-weight-light mb-0 mt-4 pt-2 text-white text-center">Copyright &copy; 2018  
+						<a class="text-danger-modified" href="#">Optimum</a>
+					. All Rights Rreserved
+					</p>
+				</div>
+			</div>
+		</footer>	<!-- FOOTER END -->
+	</div>
+	
+	<!-- JQUERY LIBARARY -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<!-- Popper.js OR AJAX LIBARARY -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<!-- BOOTSTRAP JAVASCRIPT PLUGINS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- COUSTUM JAVASCRIPT -->
+	<script src="../script/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* === DEFINE COUSTOM COLORS ===
+	Red: #f63c3c;
+	LIGHT GREY: #fafafa;
+	MID-GREY: #352d2f;
+	DARK GREY: #30282a;
+ =========================== */
+
+ /* === COUSTOM BACKGROUNDS === */
+ .bg-danger-modified {
+ 	background-color: #f63c3c;
+ }
+
+ .bg-light-modified {
+ 	background-color: #fafafa;
+ }
+
+ .bg-secondary-modified {
+ 	background-color: #352d2f;
+ }
+
+ .bg-dark-modified {
+ 	background-color: #30282a;
+ }
+
+ .btn-dark-modified {
+ 	background-color: #30282a;
+ 	border-color: #30282a;
+ 	color: #fff;
+ }
+
+ .btn-danger-modified {
+ 	background-color: #f63c3c;
+ 	border-color: #f63c3c;
+ 	color: #fff;
+ }
+
+ .btn-dark-modified:hover {
+ 	background-color: #221c1e;
+ }
+
+ .btn-danger-modified:hover {
+ 	background-color: #db3131;
+ }
+
+ a:hover {
+ 	color: #fff;
+ 	text-decoration: none;
+ }
+
+ .text-danger-modified {
+ 	color: #f63c3c;
+ }
+
+.card:hover{
+	box-shadow: 4px 8px 32px 8px rgba(0, 0, 0, 0.1);
+}
+
+.round-counter {
+	width: 8rem;
+	height: 8rem;
+}
+
+.carousel-modified {
+/*	width: 75%;*/
+	margin: 0 auto;
+	width: 60vmax;
+	height: auto;
+	object-fit: cover;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 35vmax;
+    object-fit: cover;
+}
+
+.item-checkout-img {
+	width: 10vmax;
+	height: auto;
+}
+
+/* === CUSTOM FONTS CLASSES === */
+
+
+
+
+/* === RESPONSIVE TYPOGRAPHY === */
+html {
+	font-size: 1rem;
+}
+
+@media (max-width: 575.98px) { /*== xs screens ==*/
+	html {
+	 font-size: 0.75rem;
+	}
+
+	.carousel-modified {
+		width: 50vmax;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { /*== sm screens ==*/
+	html {
+	 font-size: 0.9rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { /*== md screens ==*/
+	html {
+	 font-size: 1rem;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { /*== lg screens ==*/
+	html {
+	 font-size: 1rem;
+	}
+}
