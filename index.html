@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+	<!-- HEADER START -->
 	<div class="container-fluid bg-dark-modified">
 		<header class="container">
 			<nav class="navbar navbar-expand-sm justify-content-between p-0">
@@ -34,8 +35,10 @@
 				</ul>
 			</nav>
 		</header>
-	</div>	<!-- HEADER END -->
+	</div>	
+	<!-- HEADER END -->
 
+	<!-- NAVBAE START -->
 	<div class="container-fluid bg-light-modified margin-header">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -56,8 +59,10 @@
 					</div>
 				</div>
 			</div>
-	</div> <!-- NAVBAR END -->
-
+	</div> 
+	<!-- NAVBAR END -->
+	
+	<!-- MAIN START -->
 	<main class="container">
 		<div class="row my-md-4 carousel-modified">
 			<div class="col-sm-12 px-0">
@@ -104,7 +109,9 @@
 		<div id="products" class="row my-3">
 		</div>	<!-- NEW RELEASES ROW END -->
 	</main>
+	<!-- MAIN END -->
 	
+	<!-- HOT DEAL CONTAINER START -->
 	<div class="container-fluid bg-light-modified">
 		<section class="container py-5">
 			<div class="row text-center justify-content-center">
@@ -132,72 +139,24 @@
 				</div>
 			</div>
 		</section>
-	</div>	<!-- HOT DEAL CONTAINER END -->
+	</div>	
+	<!-- HOT DEAL CONTAINER END -->
 
+	<!-- BEST SELLERS CONTAINER START -->
 	<div class="container">
 		<div class="row justify-content-center my-5">
 			<div class="col-md-6">
 				<h1 class="text-uppercase text-center font-weight-bold">Best Sellers</h1>
 			</div>
 		</div>
-		<div class="row justify-content-center my-3">
-			<div class="col-10 col-sm-6 col-md-4">
-				<div class="card mb-3 mb-sm-4 best-seller">
-				    <a href="#" class="card-link"></a>
-				    <div class="card-body">
-			      		<h2 class="card-title card-link h4"></h2>
-			      		<h3 class="card-subtitle h6 mb-2"></h3>
-				    	<p class="card-text text-warning mb-2">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="far fa-star"></i>
-				    	</p>
-				    	<p class="card-text font-weight-bold"></p>
-				    	<button class="btn btn-danger-modified cart"><i class="fas fa-cart-plus"></i> add to cart</button>
-				    </div>
-				</div>
-			</div>
-			<div class="col-10 col-sm-6 col-md-4">
-				<div class="card mb-3 mb-sm-4 best-seller">
-				    <a href="#" class="card-link"></a>
-				    <div class="card-body">
-				    	<h2 class="card-title card-link h4"></h2>
-			      		<h3 class="card-subtitle h6 mb-2"></h3>
-				    	<p class="card-text text-warning mb-2">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="far fa-star"></i>
-							<i class="far fa-star"></i>
-							<i class="far fa-star"></i>
-				    	</p>
-				    	<p class="card-text font-weight-bold"><del class="text-muted font-weight-light"><small> 125.00 EGP</small></del> </p>
-				    	<button class="btn btn-danger-modified cart"><i class="fas fa-cart-plus"></i> add to cart</button>
-				    </div>
-				</div>
-			</div>
-			<div class="col-10 col-sm-6 col-md-4">
-				<div class="card mb-3 mb-sm-4 best-seller">
-				    <a href="#" class="card-link"></a>
-				    <div class="card-body">
-				    	<h2 class="card-title card-link h4"></h2>
-			      		<h3 class="card-subtitle h6 mb-2"></h3>
-				    	<p class="card-text text-warning mb-2">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="far fa-star"></i>
-							<i class="far fa-star"></i>
-				    	</p>
-				    	<p class="card-text font-weight-bold"><del class="text-muted font-weight-light"><small> 400.00 EGP</small></del> </p>
-				    	<button class="btn btn-danger-modified cart"><i class="fas fa-cart-plus"></i> add to cart</button>
-				    </div>
-				</div>
-			</div>
-		</div>	<!-- BEST SELLERS ROW END -->
-	</div>	<!-- BEST SELLERS CONTAINER END -->
-
+		<div class="container">
+			<div id="best-seller" class="row my-3" onload="bestSeller()"></div>
+		</div>
+	<!-- BEST SELLERS ROW END -->
+	</div>	
+	<!-- BEST SELLERS CONTAINER END -->
+	
+	<!-- FOOTER START -->
 	<div class="container-fluid bg-dark-modified">
 		<footer class="container py-5">
 			<div class="row text-white">
@@ -257,8 +216,9 @@
 					</p>
 				</div>
 			</div>
-		</footer>	<!-- FOOTER END -->
+		</footer>	
 	</div>
+	<!-- FOOTER END -->
 	
 	<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="script/popper.min.js"></script>

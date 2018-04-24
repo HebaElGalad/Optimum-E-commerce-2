@@ -76,13 +76,6 @@ var products = {
 			"picture_url": "images/card-movies-3.jpg",
 			"picture_alt": "A bird",
 			"price": '450LE'
-		},
-		{
-			"id": "movies3",
-			"name": "Home Alone",
-			"category": "movies",
-			"picture_url": "images/card-movies-3.jpg",
-			"price": '450LE'
 		}
 	]
 };
@@ -154,6 +147,9 @@ document.getElementById('search-bar').addEventListener('submit', function (e) {
 	}
 });
 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 $(window).on('load', function () {
 	addToPage();
 });
@@ -186,6 +182,17 @@ function addToPage() {
 			$('#' + arr[j][1][i].category + [i + 1] + ' .price').text(arr[j][1][i].price);
 			$('#' + arr[j][1][i].category + [i + 1] + ' .img-modified').attr('src', arr[j][1][i].picture_url);
 			$('#' + arr[j][1][i].category + [i + 1] + ' .img-modified').attr('alt', arr[j][1][i].picture_alt);
+			randInt= getRandomInt(0,3);
+			if (j==randInt || i==randInt) {
+				$('#best-seller').append(cardContent);
+				$('#' + i).attr("id", arr[j][1][i].category + [i + 1]);
+				$('#' + arr[j][1][i].category + [i + 1]).addClass(arr[j][1][i].category);
+				$('#' + arr[j][1][i].category + [i + 1] + ' .name').text(arr[j][1][i].name);
+				$('#' + arr[j][1][i].category + [i + 1] + ' .category').text(arr[j][1][i].category);
+				$('#' + arr[j][1][i].category + [i + 1] + ' .price').text(arr[j][1][i].price);
+				$('#' + arr[j][1][i].category + [i + 1] + ' .img-modified').attr('src', arr[j][1][i].picture_url);
+				$('#' + arr[j][1][i].category + [i + 1] + ' .img-modified').attr('alt', arr[j][1][i].picture_alt);
+			}
 		}
 	}
 }
