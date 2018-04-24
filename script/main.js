@@ -27,6 +27,80 @@ var products = {
 	books: [book1, book2, book3],
 	movies: [movie1, movie2, movie3]
 };
+
+var ourItems = {
+	"books": [
+		{
+			"id": "books1",
+			"name": "Python",
+			"category": "books",
+			"picture_url": "images/python.jpg",
+			"price": '540LE'
+		},
+		{
+			"id": "books2",
+			"name": "php",
+			"category": "books",
+			"picture_url": "images/php.jpg",
+			"price": '850LE'
+		},
+
+		{
+			"id": "books3",
+			"name": "Javascript",
+			"category": "books",
+			"picture_url": "images/javascript.jpg",
+			"price": '590LE'
+		}
+	],
+	"albums": [
+		{
+			"id": "albums1",
+			"name": "Metallica",
+			"category": "albums",
+			"picture_url": "images/metallica.jpg",
+			"price": '400LE'
+		},
+		{
+			"id": "albums2",
+			"name": "Garage Inc",
+			"category": "albums",
+			"picture_url": "images/garage_inc.jpg",
+			"price": '400LE'
+		},
+		{
+			"id": "albums3",
+			"name": "Hardwired",
+			"category": "albums",
+			"picture_url": "images/hardwired.jpg",
+			"price": '400LE'
+		}
+	],
+	"movies": [
+		{
+			"id": "movies1",
+			"name": "Casper",
+			"category": "movies",
+			"picture_url": "images/casper.jpg",
+			"price": '450LE'
+		},
+		{
+			"id": "movies2",
+			"name": "The Mask",
+			"category": "movies",
+			"picture_url": "images/the_mask.jpg",
+			"price": '450LE'
+		},
+		{
+			"id": "movies3",
+			"name": "Home Alone",
+			"category": "movies",
+			"picture_url": "images/home_alone.jpg",
+			"price": '450LE'
+		}
+	]
+};
+
 // GET all add-content divs
 var contentCard = $('.add-content');
 
@@ -46,6 +120,11 @@ function get_products() {
 
 
 function add_to_page(arrgument){
+	for (var keys in ourItems) {
+		var appendToDropDown = '<option value="' + keys + '">' + keys + '</option>';
+		$("#user-select").append(appendToDropDown);
+	}
+
 	var counter = 0;
 	for (var key in products) {
 		var arr = products[key];
