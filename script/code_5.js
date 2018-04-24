@@ -142,7 +142,7 @@ $(window).on('load', function () {
 	addToPage();
 });
 function addToPage() {
-	document.querySelector("#cart .price").innerHTML = localStorage.getItem("price");
+	// document.querySelector("#cart .price").innerHTML = localStorage.getItem("price");
 	for (var keys in products) {
 		var appendToDropDown = '<option class="capitalize" value="' + keys + '">' + keys + '</option>';
 		$("#user-select").append(appendToDropDown);
