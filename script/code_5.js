@@ -2,24 +2,27 @@ var products = {
 	"books": [
 		{
 			"id": "books1",
-			"name": "Python",
+			"name": "Eloquent JS",
 			"category": "books",
-			"picture_url": "images/python.jpg",
+			"picture_url": "images/card-books-1.png",
+			"picture_alt": "A bird",
 			"price": '540LE'
 		},
 		{
 			"id": "books2",
-			"name": "php",
+			"name": "Davinci Code",
 			"category": "books",
-			"picture_url": "images/php.jpg",
+			"picture_url": "images/card-books-2.jpg",
+			"picture_alt": "The Monalisa face",
 			"price": '850LE'
 		},
 
 		{
 			"id": "books3",
-			"name": "Javascript",
+			"name": "Harry Potter",
 			"category": "books",
-			"picture_url": "images/javascript.jpg",
+			"picture_url": "images/card-books-3.jpg",
+			"picture_alt": "A child riding horse",
 			"price": '590LE'
 		}
 	],
@@ -29,6 +32,7 @@ var products = {
 			"name": "Metallica",
 			"category": "albums",
 			"picture_url": "images/metallica.jpg",
+			"picture_alt": "A bird",
 			"price": '400LE'
 		},
 		{
@@ -36,6 +40,7 @@ var products = {
 			"name": "Garage Inc",
 			"category": "albums",
 			"picture_url": "images/garage_inc.jpg",
+			"picture_alt": "A bird",
 			"price": '400LE'
 		},
 		{
@@ -43,6 +48,7 @@ var products = {
 			"name": "Hardwired",
 			"category": "albums",
 			"picture_url": "images/hardwired.jpg",
+			"picture_alt": "A bird",
 			"price": '400LE'
 		}
 	],
@@ -51,21 +57,31 @@ var products = {
 			"id": "movies1",
 			"name": "Casper",
 			"category": "movies",
-			"picture_url": "images/casper.jpg",
+			"picture_url": "images/card-movies-1.jpg",
+			"picture_alt": "A bird",
 			"price": '450LE'
 		},
 		{
 			"id": "movies2",
 			"name": "The Mask",
 			"category": "movies",
-			"picture_url": "images/the_mask.jpg",
+			"picture_url": "images/card-movies-2.jpg",
+			"picture_alt": "A bird",
 			"price": '450LE'
 		},
 		{
 			"id": "movies3",
 			"name": "Home Alone",
 			"category": "movies",
-			"picture_url": "images/home_alone.jpg",
+			"picture_url": "images/card-movies-3.jpg",
+			"picture_alt": "A bird",
+			"price": '450LE'
+		},
+		{
+			"id": "movies3",
+			"name": "Home Alone",
+			"category": "movies",
+			"picture_url": "images/card-movies-3.jpg",
 			"price": '450LE'
 		}
 	]
@@ -142,22 +158,23 @@ $(window).on('load', function () {
 	addToPage();
 });
 function addToPage() {
-	document.querySelector("#cart .price").innerHTML = localStorage.getItem("price");
+	// document.querySelector("#cart .price").innerHTML = localStorage.getItem("price");
 	for (var keys in products) {
-		var appendToDropDown = '<option class="capitalize" value="' + keys + '">' + keys + '</option>';
+		var appendToDropDown = '<option value="' + keys + '">' + keys + '</option>';
 		$("#user-select").append(appendToDropDown);
 	}
 	var arr = Object.entries(products);
 	for (var j = 0; j < Object.keys(products).length; j++) {
 		for (var i = 0; i < Object.entries(products)[j][1].length; i++) {
 			var id =  arr[j][1][i].category + [i + 1];
-			var cardContent = '<div class="col-4">\
-								<div id="'+ i + '" class="card p-4 border-0 text-center product" style="width: 18rem;">\
-									<a href="details.html?id='+ id +'"><img class="card-img-top img"  alt="Card image cap"></a> \
+			var cardContent = '<div class="col-10 col-sm-6 col-md-4">\
+								<div id="'+ i + '" class="card mb-4 product add-content">\
+									<a href="details.html?id='+ id +'" class="text-dark text-uppercase"><img class="card-img-top img-modified"  alt="Card image cap"></a> \
 								  	<div class="card-body"> \
-									    <h5 class="card-title name"></h5> \
-									    <p class="card-text category"></p> \
-									    <a href="details.html?id='+ id +'" class="btn btn-primary price"></a> \
+									    <h5 class="card-title card-link name"></h5> \
+									    <p class="card-subtitle text-info category"></p> \
+									    <p class="card-text font-weight-bold price"></p> \
+									    <a href="details.html?id='+ id +'" class="btn btn-danger-modified"><i class="fas fa-cart-plus"></i> add to cart</a> \
 								  	</div>\
 								</div>\
 							 </div>'
@@ -167,7 +184,8 @@ function addToPage() {
 			$('#' + arr[j][1][i].category + [i + 1] + ' .name').text(arr[j][1][i].name);
 			$('#' + arr[j][1][i].category + [i + 1] + ' .category').text(arr[j][1][i].category);
 			$('#' + arr[j][1][i].category + [i + 1] + ' .price').text(arr[j][1][i].price);
-			$('#' + arr[j][1][i].category + [i + 1] + ' .img').attr('src', arr[j][1][i].picture_url);
+			$('#' + arr[j][1][i].category + [i + 1] + ' .img-modified').attr('src', arr[j][1][i].picture_url);
+			$('#' + arr[j][1][i].category + [i + 1] + ' .img-modified').attr('alt', arr[j][1][i].picture_alt);
 		}
 	}
 }
